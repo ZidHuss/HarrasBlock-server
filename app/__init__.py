@@ -42,8 +42,8 @@ def create_app(config_name):
 
 
 def add_resources(api):
-    # TODO
-    from .resources import SiteResource, AnalyzeResource
+    from .resources import SiteResource, AnalyzeResource, VoteResource
 
     api.add_resource(SiteResource, '/site/<int:id>', endpoint='site')
     api.add_resource(AnalyzeResource, '/analyze', endpoint='analyze')
+    api.add_resource(VoteResource, '/vote', endpoint='vote')

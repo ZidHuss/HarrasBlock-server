@@ -1,6 +1,3 @@
-import os
-
-
 class Config:
     SECRET_KEY = 'greatunihack'
     SQLALCHEMY_COMMIT_ON_TEARDOWN = True
